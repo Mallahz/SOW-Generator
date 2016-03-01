@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOW Generator", "SOW Generator\SOW Generator.csproj", "{E19F103F-478D-4855-84F1-330DEFADA2FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOW GeneratorWeb", "SOW GeneratorWeb\SOW GeneratorWeb.csproj", "{BA13D699-BFC9-4577-AEEC-D637ADFDD878}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://spotfs:8080/tfs/cerium
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = SOW\u0020Generator\\SOW\u0020Generator.csproj
+		SccProjectName1 = SOW\u0020Generator
+		SccLocalPath1 = SOW\u0020Generator
+		SccProjectUniqueName2 = SOW\u0020GeneratorWeb\\SOW\u0020GeneratorWeb.csproj
+		SccProjectName2 = SOW\u0020GeneratorWeb
+		SccLocalPath2 = SOW\u0020GeneratorWeb
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E19F103F-478D-4855-84F1-330DEFADA2FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E19F103F-478D-4855-84F1-330DEFADA2FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E19F103F-478D-4855-84F1-330DEFADA2FD}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E19F103F-478D-4855-84F1-330DEFADA2FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E19F103F-478D-4855-84F1-330DEFADA2FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E19F103F-478D-4855-84F1-330DEFADA2FD}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{BA13D699-BFC9-4577-AEEC-D637ADFDD878}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA13D699-BFC9-4577-AEEC-D637ADFDD878}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA13D699-BFC9-4577-AEEC-D637ADFDD878}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA13D699-BFC9-4577-AEEC-D637ADFDD878}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,30 @@
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# Compile files
+/SOW Generator/bin
+/SOW Generator/obj
+/SOW Generator/pkg
+/SOW Generator/Scripts
+/SOW Generator/pkgobj
+/SOW GeneratorWeb/Scripts
+/SOW GeneratorWeb/bin
+/SOW GeneratorWeb/obj
+/SOW GeneratorWeb/Properties/PublishProfiles
+/packages

@@ -1,0 +1,94 @@
+﻿/* Page-specific styling */
+.s {
+    float:left;
+}
+
+ #spinner {
+    position: fixed; 
+    /*float: left;*/
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    /*z-index: 9999; */
+    background: url('../../Images/loaderanim.gif') 50% 50% no-repeat;
+}
+
+.loading {
+    display: inline;
+}
+
+#status {
+    top: 300px; 
+    left: 50px;   
+    width: 200px;
+}
+
+
+#message {
+    color: red;
+}
+
+#accordion {
+position:absolute;
+bottom: 0px;
+max-height: 35%;
+width: 100%;
+}
+
+#ui-accordion-accordion-panel-0 {
+    background: #A1D8F1;
+}
+
+/* Radio Button style*/
+@import "compass/css3";
+
+/*$DarkBrown: #BCC1C3;*/
+/*$Black: black;*/
+
+/*$Orange: #085DAA;*/
+
+div {
+  margin:0 0 0.75em 0;
+}
+
+input[type="radio"] {
+    display:none;
+}
+input[type="radio"] + label {
+    color: black;
+    font-family:Calibri, sans-serif;
+    font-size:12px;
+    padding: 0 4px 0 4px;
+}
+input[type="radio"] + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    cursor:pointer;
+    -moz-border-radius:  50%;
+    border-radius:  50%;
+}
+
+input[type="radio"] + label span {
+     background-color: #BCC1C3;
+}
+
+input[type="radio"]:checked + label span{
+     background-color: #085DAA;
+}
+
+input[type="radio"] + label span,
+input[type="radio"]:checked + label span {
+  -webkit-transition:background-color 0.4s linear;
+  -o-transition:background-color 0.4s linear;
+  -moz-transition:background-color 0.4s linear;
+  transition:background-color 0.4s linear;
+}
+
+.errorNotification {
+    background-color: #FFBABA;
+    color: #D8000C;
+}

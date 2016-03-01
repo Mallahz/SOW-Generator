@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title></title>
+    <script src="../../Scripts/jquery-2.1.1.js" type="text/javascript"></script>
+    <!--<script src="//code.jquery.com/jquery-1.11.1.min.js" type="text/javascript"></script>-->
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/Office.js" type="text/javascript"></script>
+    <!--<script src="../../Scripts/Office/1/office.js" type="text/javascript"></script>-->
+    <script src="../../Scripts/JQueryUI/jquery-ui-1.9.2.custom.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="../../Scripts/toword.js"></script>
+    <!--<script src="//code.jquery.com/ui/1.10.4/jquery-ui.min.js" type="text/javascript"></script>-->
+
+    <link href="../../Content/Office.css" rel="stylesheet" type="text/css" />
+    <link href="../../Scripts/JQueryUI/jquery-ui-1.9.2.custom.min.css" rel="stylesheet" type="text/css" />
+    <link href="../../Scripts/ProgressBar/tiny-green.css" rel="stylesheet" type="text/css" />
+
+    <!-- Office UI App Fabric CDN -->
+    <link rel="stylesheet" href="http://appsforoffice.microsoft.com/fabric/1.0/fabric.min.css">
+    <link rel="stylesheet" href="http://appsforoffice.microsoft.com/fabric/1.0/fabric.components.min.css">
+    
+        <!-- To enable offline debugging using a local reference to Office.js, use:                        -->
+    <!--    <script src="../../Scripts/Office/MicrosoftAjax.js" type="text/javascript"></script>       -->
+    <!--    <script src="../../Scripts/Office/1.0/office.js" type="text/javascript"></script>          -->
+
+    <link href="../App.css" rel="stylesheet" type="text/css" />
+    <script src="../App.js" type="text/javascript"></script>
+
+    <link href="Home.css" rel="stylesheet" type="text/css" />
+    <script src="Home.js" type="text/javascript"></script>
+</head>
+<body>
+    <!-- Page content -->
+    <div id="content-header">
+        <div class="padding">
+            <h1>Let's Build a SOW</h1>
+        </div>
+    </div>
+
+    <div id="content-main">
+        <div class="padding">
+
+            <!--<div class="ms-NavBar">
+                <ul class="ms-NavBar-items">
+                    <li class="ms-NavBar-item" is-selected" id="btncerq"><a class="ms-NavBar-link" href="#">CERQ</a></li>
+                    <li class="ms-Pivot-link" id="btnnocerq"><a class="ms-NavBar-link" href="#">No CERQ</a></li>
+                </ul>
+            </div>-->
+            <form id="s">
+               
+                <div>
+                    <input type="radio" id="btncerq" name="radio" checked="checked" />
+                    <label for="btncerq"><span></span>CERQ</label>
+                    <input type="radio" id="btnnocerq" name="radio" />
+                    <label for="btnnocerq"><span></span>No CERQ</label>
+                </div>
+                <div id="bycerq">
+                    <label for="cerq">Enter CERQ (Only number)</label>
+                    <input id="cerq" type="text" name="cerq" title="" placeholder="55261" />
+                </div>
+                <div id="byPID">
+                    <div>
+                        <label for="PID">Enter PID (last 5 digits)</label>
+                        <input id="PID" type="text" name="PID" title=" placeholder="06887" />
+                    </div>
+                    <div>
+                        <label for="jcodes">Enter JCodes (Copy from Excel column or enter manually, separated by a single space or column.)</label>
+                        <textarea id="jcodes" title="Add JCodes" rows="20" placeholder="J91050 J91055"></textarea>
+                    </div>
+
+                </div>
+                <button type="submit">Go</button>
+
+            </form>
+
+            <div></div>
+            <div id="spinner" style="display:none"></div>
+            <div id="status" style="display:none" class="tiny-green"><div></div></div>
+            <div id="statcomp"></div>
+            <div id="message"></div>
+        </div>
+        <div id="accordion">
+            <h4><a href="#">Settings</a></h4>
+            <div>
+                Version: 1.9.0.1
+               <div>
+                    <div class="s">Get Account Data: </div><div id="getacct">Not Started</div>
+                    <div class="s">Get Opp Data:</div><div id="getOppdata">Not Started</div>
+                    <div class="s">Get Sales Code:</div><div id="getPSID">Not Started</div>
+                    <!--<div class="s">Get Prim Sol:</div><div id="getPrimSol">Not Started</div>-->
+                    <div class="s">Get Sect Layout:</div><div id="getseclayout">Not Started</div>
+                    <div class="s">Get Layout Config:</div><div id="getlayoutconfig">Not Started</div>
+                    <div class="s">Get User Data:</div> <div id="getuserdata">Not Started</div>
+                    <div class="s">Get PM XML:</div><div id="getpmXML">Not Started</div>
+                    <div class="s">Get JCodes:</div><div id="getjcodes">Not Started</div>
+                    <div class="s">Fill Accounts:</div><div id="fillacct">Not Started</div>
+                    <div class="s">Get Site Data:</div><div id="getsitedata">Not Started</div>
+                    <div class="s">Get Locations:</div><div id="getLocations">Not Started</div>
+            </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
