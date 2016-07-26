@@ -111,11 +111,7 @@
     };
 
     var restURL = {
-        // Development URLs
-        //crm: 'https://devcrm13a:8282/mscrmconnector/live.rsc/', sql: 'https://devcrm13a:8282/sqlconnector/', api: 'http://devshared1:8080/', token: '3m6M4r6s1L2d9x7W4h4w'
-        // Production URLs
-        //crm: 'https://spoappweb:8282/mscrmconnector/live.rsc/',
-        crmcustom: 'http://devshared1:8800/Service1.svc/', sql: 'https://spoappweb:8282/sqlconnector/', api: 'http://spoappweb:8080/'   
+        crmcustom: 'http://'   
        
     }
 
